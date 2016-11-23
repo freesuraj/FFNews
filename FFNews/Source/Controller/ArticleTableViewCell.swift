@@ -27,7 +27,6 @@ class ArticleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         articleImageView.clipsToBounds = true
-        imageWidthConstraint.constant = 0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

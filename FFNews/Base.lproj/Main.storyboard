@@ -15,17 +15,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mI5-xP-2KH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="169" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mI5-xP-2KH">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="148" id="nuV-vI-x0A" customClass="ArticleTableViewCell" customModule="FFNews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="148"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="169" id="nuV-vI-x0A" customClass="ArticleTableViewCell" customModule="FFNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="406" height="169"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nuV-vI-x0A" id="yhT-9Q-IW6">
-                                            <frame key="frameInset" width="375" height="147"/>
+                                            <frame key="frameInset" width="406" height="168.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should Australia match Trump's 15 per cent business tax rate?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWe-1r-v1G">
@@ -73,7 +73,7 @@
                                                 <constraint firstItem="4Ce-qu-tq7" firstAttribute="leading" secondItem="MWe-1r-v1G" secondAttribute="leading" id="dVg-xh-GgS"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="4Ce-qu-tq7" secondAttribute="bottom" constant="10" id="fHQ-wq-Ebq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="MWe-1r-v1G" secondAttribute="trailing" id="yn6-m3-UPd"/>
-                                                <constraint firstAttribute="topMargin" secondItem="MWe-1r-v1G" secondAttribute="top" id="zud-Li-Us1"/>
+                                                <constraint firstAttribute="topMargin" secondItem="MWe-1r-v1G" secondAttribute="top" constant="-2" id="zud-Li-Us1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -95,12 +95,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mI5-xP-2KH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="YMv-To-Uen"/>
-                            <constraint firstItem="mI5-xP-2KH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="alD-5f-N5j"/>
+                            <constraint firstItem="mI5-xP-2KH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="alD-5f-N5j"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mI5-xP-2KH" secondAttribute="trailing" constant="-16" id="gcT-4n-DVt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mI5-xP-2KH" secondAttribute="bottom" id="niG-uy-RU0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z1l-Uz-UT3"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="tableView" destination="mI5-xP-2KH" id="fSu-Ju-gPa"/>
                     </connections>

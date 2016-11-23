@@ -10,6 +10,7 @@
 		ED4D9B581DE5E94B00E4687D /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D9B571DE5E94B00E4687D /* ArticleListViewController.swift */; };
 		ED4D9B5A1DE5E95700E4687D /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D9B591DE5E95700E4687D /* ArticleTableViewCell.swift */; };
 		ED921D341DE5EE0200E8696E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED921D331DE5EE0200E8696E /* ImageLoader.swift */; };
+		ED921D361DE607ED00E8696E /* ArticleReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED921D351DE607ED00E8696E /* ArticleReaderViewController.swift */; };
 		EDB6022E1DE59891001A9AE9 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6022D1DE59891001A9AE9 /* NetworkManagerTest.swift */; };
 		EDB602321DE598B0001A9AE9 /* NewsRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB602311DE598B0001A9AE9 /* NewsRequestTest.swift */; };
 		EDB6023C1DE5A064001A9AE9 /* SampleJson.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDB6023B1DE5A064001A9AE9 /* SampleJson.plist */; };
@@ -48,6 +49,7 @@
 		ED4D9B571DE5E94B00E4687D /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		ED4D9B591DE5E95700E4687D /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		ED921D331DE5EE0200E8696E /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		ED921D351DE607ED00E8696E /* ArticleReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleReaderViewController.swift; sourceTree = "<group>"; };
 		EDB6022D1DE59891001A9AE9 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 		EDB602311DE598B0001A9AE9 /* NewsRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRequestTest.swift; sourceTree = "<group>"; };
 		EDB6023B1DE5A064001A9AE9 /* SampleJson.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleJson.plist; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				ED4D9B571DE5E94B00E4687D /* ArticleListViewController.swift */,
 				ED4D9B591DE5E95700E4687D /* ArticleTableViewCell.swift */,
+				ED921D351DE607ED00E8696E /* ArticleReaderViewController.swift */,
 			);
 			name = Controller;
 			path = Source/Controller;
@@ -329,6 +332,7 @@
 				EDDBBC2D1DE593A000DD5514 /* Constants.swift in Sources */,
 				ED4D9B5A1DE5E95700E4687D /* ArticleTableViewCell.swift in Sources */,
 				ED921D341DE5EE0200E8696E /* ImageLoader.swift in Sources */,
+				ED921D361DE607ED00E8696E /* ArticleReaderViewController.swift in Sources */,
 				ED4D9B581DE5E94B00E4687D /* ArticleListViewController.swift in Sources */,
 				EDDBBC231DE580B400DD5514 /* Article.swift in Sources */,
 				EDDBBC271DE5859900DD5514 /* NetworkRequest.swift in Sources */,
