@@ -9,6 +9,8 @@
 import Foundation
 
 struct Article {
+    let id: String
+    let timeStamp: Double
     let byLine: String
     let tags: [String]
     let headline: String
@@ -25,10 +27,14 @@ fileprivate struct Image {
 extension Article {
     
     init?(raw: [String: Any]) {
-        guard let byLine = raw["byLine"] as? String,
+        guard let id = raw["id"] as? Int,
+            let timeStamp = raw["onTime"] as? Double,
+            let byLine = raw["byLine"] as? String,
             let headline = raw["headline"] as? String,
             let abstract = raw["theAbstract"] as? String,
             let url = raw["url"] as? String else { return nil }
+        self.id = String(id)
+        self.timeStamp = timeStamp
         self.byLine = byLine
         self.headline = headline
         self.abstract = abstract

@@ -25,6 +25,8 @@ class ArticleTest: XCTestCase {
             return
         }
         let article = Article(raw: rawArticle)!
+        XCTAssertEqual(article.id, "1015924351")
+        XCTAssertEqual(article.timeStamp, 1479816000000)
         XCTAssertEqual(article.byLine, "Michael Bleby")
         XCTAssertEqual(article.headline, "Why the Greater Sydney Commission says the city has to change")
         XCTAssertEqual(article.abstract, "Cities throughout the wide brown land have revelled in the the developmental luxury of sprawl and cheap land, but now it's coming back to bite.")

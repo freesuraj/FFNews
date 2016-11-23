@@ -33,18 +33,26 @@ class FFNewsRequestTest: XCTestCase {
         XCTAssertNil(request!.body)
     }
     
-    func testNetworkParser() {
+    func testNetworkParserValid() {
         guard let raw = TestSampler.shared.valueForKeyPath("NewsList", "normal") as? [String: Any] else {
             XCTAssert(false)
             return
         }
-//        sut.networkManager = StubPGNetworkManager(expectedJson: nil, expectedError: expectedError)
-//        let expectation = self.expectation(description: "Block_Success")
-//        sut.send(success: {_ in}, failure: { error in
-//            XCTAssertEqual(error, expectedError)
-//            expectation.fulfill()
-//        })
-//        waitForExpectations(timeout: 3, handler: nil)
+        
+        let parsedResult = NewsParser.parsed(raw)
+        XCTAssertEqual(parsedResult.count, 12)
+        let article = parsedResult[0]
+        XCTAssertEqual(article.id, "1015924351")
+    }
+    
+    func testNetworkParserInvalid() {
+        guard let raw = TestSampler.shared.valueForKeyPath("NewsList", "invalid") as? [String: Any] else {
+            XCTAssert(false)
+            return
+        }
+        
+        let parsedResult = NewsParser.parsed(raw)
+        XCTAssertEqual(parsedResult.count, 0)
     }
     
 }

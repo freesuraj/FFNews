@@ -25,16 +25,12 @@ struct FFNewsRequest: NetworkRequest {
 
 struct NewsParser {
     
-    typealias NewsFetchBlock = (([Article]) -> Void)
-    
-    static func parse(json: Any, completion: @escaping NewsFetchBlock) {
+    static func parsed(_ json: Any) -> [Article] {
         guard let response = json as? [String: Any],
             let assests = response["assets"] as? [[String: Any]] else {
-                completion([])
-                return
+                return []
         }
-        let newsList = assests.flatMap { return Article(raw: $0) }
-        completion(newsList)
+        return assests.flatMap { return Article(raw: $0) }
     }
     
 }
@@ -45,7 +41,7 @@ extension FFNewsRequest {
     
     func send(_ completion: @escaping NewsFetchBlock) {
         NetworkManager.shared.request(request: self, success: { json in
-            NewsParser.parse(json: json, completion: completion)
+            completion(NewsParser.parsed(json))
         }, failure: { _ in
             completion([])
         })
