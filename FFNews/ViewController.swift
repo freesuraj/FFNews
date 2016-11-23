@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let req = newsRequest {
-            req.fetchNews({ articles in
+            req.send { articles in
                 print("articles count \(articles.count)")
-            })
+            }
         }
     }
 

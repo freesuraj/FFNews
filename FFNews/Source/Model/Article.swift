@@ -35,11 +35,8 @@ extension Article {
         self.url = url
         
         // Makes an array of category names from category object array
-        if let categories = raw["categories"] as? [Any] {
-            tags = categories.flatMap { item -> String? in
-                guard let dict = item as? [String: String] else { return nil }
-                return dict["name"]
-            }
+        if let categories = raw["categories"] as? [[String: Any]] {
+            tags = categories.flatMap { return $0["name"] as? String }
         } else {
             tags = []
         }
