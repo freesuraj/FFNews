@@ -67,7 +67,6 @@ extension ArticleListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // do sth
         guard let url = URL(string: articles[indexPath.row].url) else {
             tableView.deselectRow(at: indexPath, animated: true)
             return
